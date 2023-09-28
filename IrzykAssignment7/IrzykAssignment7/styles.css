@@ -1,0 +1,79 @@
+/*
+ I certify that the CSS file I am submitting is all my own work.
+None of it is copied from any source or any person.
+Signed: Dylan Irzyk.
+*/
+/*
+Author: Dylan Irzyk
+Date: 4/30/2023
+Class: CSC135
+Project: Assignment 7
+Description:  Calculator
+*/
+/* Creating layout for the background of the calculator */
+.calculator {
+    width: 210px;
+    margin: 0 auto;
+    background-color: darkslategray;
+    border-radius: 10px;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 2fr;
+    gap: 6px;
+}
+h3{
+    position: relative;
+    justify-content: center;
+    text-align:center;
+    left:60px;
+    font-size:larger;
+    color:white;
+}
+/*Creating the settings for the display of the calculator*/
+.display {
+    grid-column: 1 / span 4;
+    background-color: blanchedalmond;
+    border-radius: 12px;
+    text-align: right;
+    padding: 10px;
+    font-size: 21px;
+}
+/* Styling the operator buttons*/
+.operator-button {
+    background-color: darkorange;
+    font-size: 16px;
+    border-radius: 12px;
+    color: white;
+    
+}
+/* Styling the digit buttons*/
+.digit-button {
+    background-color: #ccc;
+    border-radius: 12px;
+    font-size: 16px;
+    color: black;
+ 
+}
+/* Styling the memory buttons*/
+.memory-button {
+    background-color: darkblue;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+}
+/* Styling the clear button*/
+.clear {
+    background-color: red;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Styling the equals button*/
+.equal {
+    background-color: green;
+    border-radius: 12px;
+    color: white;
+    font-size: 16px;
+}
